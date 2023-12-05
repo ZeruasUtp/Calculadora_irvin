@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Calculadora de Derivadas</title>
+
+        <!-- Enlace a los estilos de Bootstrap (ajusta la URL según tu configuración) -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <style>
+      /* Estilo para el contenedor */
+      .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            block-size: 70vh; /* Esto es opcional y establece la altura del contenedor al 100% de la altura visible del dispositivo */
+            
+        }
+
+        /* Estilo para la imagen */
+        img {
+            max-inline-size: 50%; /* Ajusta el tamaño máximo de la imagen al ancho del contenedor */
+            block-size: 400px;
+        }
+
+        body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: inline-start;
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: black;
+  border-block-end: 2px solid white; /* Agrega una línea en la parte inferior */
+  padding-block-end: 12px; /* Ajusta según sea necesario */
+}
+
+
+    </style>
+
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Calculadora</a>
+                <button class="navbar-toggler d-lg-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/"
+                                aria-current="page">Inicio <span
+                                    class="visually-hidden"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/calculadora"
+                                aria-current="page">Calculadora <span
+                                    class="visually-hidden"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/documentos"
+                                aria-current="page">Documentacion <span
+                                    class="visually-hidden"></span></a>
+                        </li>
+                    </div>
+                </nav>
+            </header> <br>
+
+            <!-- alertas -->
+            <div class="container">
+                <h1 class="text-center mb-4">Programación</h1>
+            </div>
+
+            <div class="container">
+                <h3>Python</h3>
+                <p>Python es un lenguaje de programación ampliamente utilizado
+                    en las aplicaciones web, el desarrollo de software, la
+                    ciencia de datos y el machine learning (ML). Los
+                    desarrolladores utilizan Python porque es eficiente y fácil
+                    de aprender, además de que se puede ejecutar en muchas
+                    plataformas diferentes. El software Python se puede
+                    descargar gratis,
+                    se integra bien a todos los tipos de sistemas y aumenta la
+                    velocidad del desarrollo.</p>
+
+                <p>Algunas características clave de Python incluyen:
+
+                    Fácil de aprender y leer: La sintaxis de Python está
+                    diseñada para ser clara y legible, lo que facilita su
+                    aprendizaje y mantenimiento del código.
+
+                    Interpretado: Python es un lenguaje interpretado, lo que
+                    significa que el código puede ejecutarse línea por línea sin
+                    necesidad de compilar previamente. Esto facilita el
+                    desarrollo y la depuración.
+
+                    Multiparadigma: Python admite varios paradigmas de
+                    programación, incluyendo programación orientada a objetos,
+                    programación imperativa y programación funcional.
+
+                    Amplia biblioteca estándar: Python incluye una amplia
+                    variedad de módulos y bibliotecas en su biblioteca estándar,
+                    lo que facilita el desarrollo de aplicaciones sin tener que
+                    empezar desde cero.
+
+                    Comunidad activa: Python cuenta con una comunidad grande y
+                    activa de desarrolladores que contribuyen con bibliotecas,
+                    frameworks y recursos educativos, lo que facilita el
+                    aprendizaje y la resolución de problemas.
+
+                    Versátil: Python se utiliza en una variedad de aplicaciones,
+                    desde desarrollo web y análisis de datos hasta inteligencia
+                    artificial y aprendizaje automático.
+
+                    Código abierto: Python es un proyecto de código abierto, lo
+                    que significa que su código fuente está disponible para el
+                    público. Esto fomenta la colaboración y permite a los
+                    desarrolladores contribuir al desarrollo y mejora del
+                    lenguaje.
+
+                    Python se ha convertido en uno de los lenguajes de
+                    programación más populares y es ampliamente utilizado en la
+                    industria y la academia para una variedad de propósitos.</p>
+
+            </div>
+
+            <div class="contenedor">
+                <img
+                    src="https://formadoresit.es/wp-content/uploads/2022/02/Python-banner.png"
+                    alt>
+
+            </div>
+
+            <div class="container">
+                <h3>SymPy</h3>
+                <p>
+                    SymPy es una biblioteca de álgebra simbólica para Python.
+                    Proporciona herramientas para realizar cálculos simbólicos,
+                    lo que significa que puede manipular expresiones matemáticas
+                    con símbolos en lugar de valores numéricos concretos. Esta
+                    biblioteca es útil para realizar operaciones algebraicas,
+                    cálculo diferencial,
+                    cálculo integral, simplificación de expresiones matemáticas
+                    y otras tareas relacionadas con la manipulación simbólica.
+                </p>
+
+                <p>
+                    Algunas características clave de SymPy incluyen:
+
+                    Manipulación simbólica: Puedes trabajar con símbolos en
+                    lugar de valores numéricos. Esto es útil para expresar
+                    fórmulas matemáticas de una manera más general.
+
+                    Álgebra simbólica: SymPy puede realizar operaciones
+                    algebraicas como simplificación, factorización, expansión y
+                    resolución de ecuaciones simbólicas.
+
+                    Cálculo diferencial e integral: Puedes derivar e integrar
+                    expresiones simbólicas.
+
+                    Álgebra lineal: SymPy ofrece funcionalidades para trabajar
+                    con matrices y realizar operaciones de álgebra lineal.
+
+                    Ecuaciones diferenciales: Puedes resolver ecuaciones
+                    diferenciales ordinarias.
+                </p>
+
+            </div>
+
+            <div class="contenedor">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Sympy_logo.svg/800px-Sympy_logo.svg.png"
+                    alt>
+
+            </div>
+            <!-- Incluir los scripts de Bootstrap y el script personalizado -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+            <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+                integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+                crossorigin="anonymous"></script>
+
+            <!-- Script personalizado para reiniciar el formulario y validar espacios -->
+            <script>
+        function resetForm() {
+            // Limpiar el contenido del campo de función
+            document.getElementById('funcion').value = '';
+            
+            // Limpiar el contenido del campo de variable
+            document.getElementById('variable').value = '';
+
+            // Limpiar el contenido del resultado
+            document.getElementById('resultado').innerHTML = '';
+        }
+
+        function validateNoSpaces(input) {
+            // Elimina espacios en blanco del valor del campo
+            input.value = input.value.replace(/\s/g, '');
+        }
+    </script>
+
+            <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("click", function (event) {
+        var dropdowns = document.querySelectorAll(".dropdown-content");
+        dropdowns.forEach(function(dropdown) {
+            if (dropdown.classList.contains("show")) {
+                dropdown.classList.remove("show");
+            }
+        });
+    });
+
+    document.querySelector('.dropdown').addEventListener("click", function (event) {
+        var dropdownContent = this.querySelector('.dropdown-content');
+        dropdownContent.classList.toggle("show");
+        event.stopPropagation();
+    });
+});
+
+    </script>
+        </body>
+    </html>
